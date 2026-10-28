@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术中文润色"
+  short_description: "润色论文与报告的中文表达，统一术语、语法与标点，保留原意和论证强度"
+  default_prompt: "请用 $academic-chinese-polish 润色以下学术中文，保留原意和论证强度，并标出需要确认的歧义。"
