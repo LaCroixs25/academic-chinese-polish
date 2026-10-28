@@ -43,9 +43,9 @@ git clone https://github.com/LaCroixs25/academic-chinese-polish ~/.codex/skills/
 
 ## 测试
 
-[tests/cases.md](tests/cases.md) 里有 6 条用例和检查点，覆盖数值、因果、引用范围、口语、降重和术语。修改 `SKILL.md` 后，建议在新对话里逐条重跑。
+[tests/cases.md](tests/cases.md) 里有 18 条文本用例、3 个文件用例（tex、docx、docx 修订模式）和 20 条触发测试，测试材料在 [tests/fixtures](tests/fixtures)。修改 `SKILL.md` 后，建议在新对话里逐条重跑。
 
-当前状态：6 条用例均已在 Claude 上通过，每条运行 1 次。DOCX、LaTeX 文件和长文本尚未系统测试。
+当前状态：在 Claude 上每条运行 3 轮，红线检查点零失败，触发测试 60/60。详细结果和已知不足见 [tests/REPORT.md](tests/REPORT.md)。Codex 尚未实测。
 
 ## 许可
 
