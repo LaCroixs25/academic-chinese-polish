@@ -45,7 +45,11 @@ git clone https://github.com/LaCroixs25/academic-chinese-polish ~/.codex/skills/
 
 [tests/cases.md](tests/cases.md) 里有 18 条文本用例、3 个文件用例（tex、docx、docx 修订模式）和 20 条触发测试，测试材料在 [tests/fixtures](tests/fixtures)。修改 `SKILL.md` 后，建议在新对话里逐条重跑。
 
-当前状态：在 Claude 上每条运行 3 轮，红线检查点零失败，触发测试 60/60。详细结果和已知不足见 [tests/REPORT.md](tests/REPORT.md)。Codex 尚未实测。
+**Claude**：每条运行 3 轮，红线检查点零失败，触发测试 60/60。
+
+**Codex**：18 条文本用例 × 3 轮，原清单红线检查点 48/48，非红线 85/90（94.4%）；调用选择模拟 60/60。三个文件场景完成结构检查；DOCX 版面检查因 agent 工具链环境限制未完成，单独记为未验证，不计作 skill 失败。
+
+两种环境的测试方法不同。详细结果、评分边界与已知不足见 [tests/REPORT.md](tests/REPORT.md)，Codex 原始回复与逐项评分见 [tests/codex-results.json](tests/codex-results.json)。
 
 ## 许可
 
